@@ -25,3 +25,9 @@ Then go to the `ktlink` folder and type::
     make program
 
 This will load iMPACT to generate an SVF file and then load this SVF file via urJTAG into the CPLD. Make sure that the BusBlaster mode jumper is set to *Update Buffer*.
+
+
+OpenOCD
+-------
+
+An OpenOCD interface description can be found in the xpcc repository (see https://github.com/roboterclubaachen/xpcc/blob/develop/tools/openocd/busblaster-ktlink.cfg).
