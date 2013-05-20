@@ -1,0 +1,60 @@
+# Bus Blaster v4.1a Pin connections
+# 
+# see:
+# - http://dangerousprototypes.com/docs/Minouche_:_Bus_Blaster_v4
+# - http://dangerousprototypes.com/docs/images/6/66/Cct-BusBlaster-v4.png
+
+# all IO-Pins are 3,3V
+NET "*" IOSTANDARD = LVCMOS33;
+
+# JTAG connector
+net "trst_np" loc="P97";
+net "tdi_p" loc="P94";
+net "tms_p" loc="P92";
+net "tck_p" loc="P91";
+net "rtck_p" loc="P81";
+net "tdo_p" loc="P79";
+net "srst_np" loc="P78";
+net "dbgrq_p" loc="P77";
+net "dbgack_p" loc="P76";
+
+# FT2232H connection
+net "ft_tck_p" loc="P60";		# ADBUS0
+net "ft_tdi_p" loc="P58";		# ADBUS1
+net "ft_tdo_p" loc="P56";		# ADBUS2
+net "ft_tms_p" loc="P55";		# ADBUS3
+net "adbus4_p" loc="P53";
+net "ft_swd_en_np" loc="P52";
+net "ft_srst_in_p" loc="P50";
+net "ft_rtck_p" loc="P49";
+
+net "ft_trst_p" loc="P43";		# ACBUS0
+net "ft_srst_out_p" loc="P42";
+net "ft_trst_oe_np" loc="P41" | pullup;
+net "ft_srst_oe_np" loc="P40" | pullup;
+net "ft_tms_oe_np" loc="P39" | pullup;
+net "ft_tdi_oe_np" loc="P27" | pullup;		# GCK2
+net "ft_tck_oe_np" loc="P37" | pullup;
+net "ft_led_np" loc="P36";
+
+net "bdbus0_p" loc="P17";		# BDBUS0
+net "ft_rx_p" loc="P16";
+net "bdbus2_p" loc="P15";
+net "bdbus3_p" loc="P14";
+net "bdbus4_p" loc="P35";
+net "bdbus5_p" loc="P34";
+net "bdbus6_p" loc="P33";
+net "bdbus7_p" loc="P32";
+
+net "bcbus0_p" loc="P30";		# BCBUS0
+net "bcbus1_p" loc="P29";
+net "bcbus2_p" loc="P28";
+net "bcbus3_p" loc="P24";
+net "bcbus4_p" loc="P23";
+net "bcbus5_p" loc="P22";
+net "bcbus6_p" loc="P19";
+net "bcbus7_p" loc="P18";
+
+# other
+net "led_p" loc="P64";
+net "button_np" loc="P61" | pullup;
