@@ -18,7 +18,9 @@ To program the CPLD a newer version of urJTAG is needed. See the description in 
 Program the CPLD
 ----------------
 
-Load the ISE 13.3 project (project file: `ktlink/ise/busblaster_v4_ktlink.xise`) and click "generate programming file". This will generate `ktlink/ise/toplevel.jed`. Then go to the `ktlink` folder and type::
+Load the ISE 13.3 project (project file: `ktlink/ise/busblaster_v4_ktlink.xise`) and click *Generate Programming File*. This will generate `ktlink/ise/toplevel.jed`. At the first time you will have to use *Process > Rerun All* to build everything a second time, otherwise ISE will complain about missed timing specs.
+
+Then go to the `ktlink` folder and type::
 
     make program
 
